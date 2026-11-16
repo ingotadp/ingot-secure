@@ -1,0 +1,10 @@
+title = "IngotADP Gitleaks Configuration"
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Ignore synthetic test fixtures in Rego unit tests"
+paths = [
+  '''policies/.*_test\.rego$''',
+]
